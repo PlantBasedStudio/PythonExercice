@@ -18,7 +18,7 @@ print(type(age))
 
 # Exercice 3, reconnaître les types de variables
 nom = "Damien"
-age = 27
+age: int = 27 #On peut typer la variable mais c'est seulement un repère. Python reste dynamique
 taille = 1.70
 est_etudiant = True
 print(nom, age, taille, est_etudiant)
@@ -84,3 +84,17 @@ couleur_banane = fruits["banane"]
 fruits["pomme"] = "vert"
 del fruits["banane"]
 print(fruits)
+
+
+#test révision 
+import random 
+def programme_juste_prix():
+    number_to_found = random.randrange(0,9)
+    print(number_to_found)
+    number_player = int(input("Entrez un nombre :"))
+    if number_player == number_to_found:
+        print("Victoire")
+    else:
+        print("Défaite")
+
+programme_juste_prix()
